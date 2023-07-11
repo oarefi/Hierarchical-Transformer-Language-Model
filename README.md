@@ -1,5 +1,6 @@
 # Hierarchical Transformer Language Model
-This repository contains the implementation of a hierarchical Transformer-based language model for text generation. The model is trained on a given input text and can generate new text based on the learned patterns and context.
+This repository contains the implementation of a hierarchical Transformer-based language model for text generation. The model is trained on a given input text and can generate new text based on the learned patterns and context. 
+The input text in this case is 1001 Nights.
 
 ## Prerequisites
 Python 3.x
@@ -77,4 +78,4 @@ The implementation of the hierarchical Transformer model is based on the work of
 The training loop and data processing code are adapted from the "pytorch/examples" repository.
 Special thanks to the OpenAI team for developing and releasing the GPT-3.5 model, which served as the foundation for this language model.
 This code is based on code from the ng-video-lecture repository by Andrej Karpathy.
-The original code can be found in this YouTube video.
+
