@@ -83,12 +83,12 @@ To evaluate the generated summaries, we use the following metrics:
 
 ROUGE (Recall-Oriented Understudy for Gisting Evaluation): ROUGE scores measure the similarity between the generated summary and the reference summary. Specifically, we use ROUGE-1, ROUGE-2, and ROUGE-L scores. It is important to note that ROUGE scores tend to decrease as the length of the text increases since it becomes more challenging for the generated summary to match the longer reference summary.
 
-ROUGE-1 Score: 0.33
-ROUGE-2 Score: 0.12
-ROUGE-L Score: 0.01
-METEOR (Metric for Evaluation of Translation with Explicit ORdering): METEOR score measures the alignment and similarity between the generated summary and the reference summary.
+* ROUGE-1 Score: 0.33
+* ROUGE-2 Score: 0.12
+* ROUGE-L Score: 0.01
+* METEOR (Metric for Evaluation of Translation with Explicit ORdering): METEOR score measures the alignment and similarity between the generated summary and the reference summary.
 
-METEOR Score: 0.2009
+* METEOR Score: 0.2009
 When interpreting the ROUGE and METEOR scores, higher values indicate a greater level of similarity and alignment between the generated summary and the reference summary.
 
 These scores reflect the performance of the model. Achieving a ROUGE-1 score of 0.33 and ROUGE-2 score of 0.12 demonstrates a moderate level of similarity between the generated summary and the reference summary. The ROUGE-L score of 0.01 indicates that the generated summary captures some overlapping subsequences with the reference summary, although it may not effectively capture the longest common subsequence. Additionally, the METEOR score of 0.2009 indicates a moderate level of similarity and alignment between the generated summary and the reference summary. Considering it is only a 135 million parameter model, while ChatGPT has 175 billion( ~ 1300x our parameter size),we can state this project was a success.
