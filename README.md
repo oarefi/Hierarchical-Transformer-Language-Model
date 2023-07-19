@@ -55,28 +55,28 @@ NgramLanguageModel: The main language model that combines the above components. 
 
 Training Loop
 The model is trained using the Adam optimizer. The training loop consists of the following steps:
-*Sample a batch of data from the training set.
-*Evaluate the loss and perform backpropagation to update the model parameters.
-*Every eval_interval iterations, evaluate the loss on both the training and validation sets using the estimate_loss() function.
-*Print the training and validation losses at regular intervals.
+* Sample a batch of data from the training set.
+* Evaluate the loss and perform backpropagation to update the model parameters.
+* Every eval_interval iterations, evaluate the loss on both the training and validation sets using the estimate_loss() function.
+* Print the training and validation losses at regular intervals.
 
 Hyperparameters
-*batch_size: Number of independent sequences processed in parallel.
-*block_size: Maximum context length for predictions.
-*max_iters: Maximum number of training iterations.
-*eval_interval: Interval for evaluating the loss on training and validation sets.
-*learning_rate: Learning rate for the optimizer.
-*device: Device to run the computations on (CPU or CUDA).
-*eval_iters: Number of iterations for estimating the loss during evaluation.
-*n_embd: Embedding dimension.
-*n_head: Number of heads for self-attention.
-*n_layer: Number of transformer blocks.
-*dropout: Dropout rate for regularization.
-*ngram: Size of the N-gram context for generating new tokens.
-*block_num_heads: Number of heads used in the hierarchical attention mechanism for attending to blocks of tokens.
-*block_head_size: Size of each head in the block-level attention.
-*token_num_heads: Number of heads used in the hierarchical attention mechanism for attending to individual tokens within blocks.
-*token_head_size: Size of each head in the token-level attention.
+* batch_size: Number of independent sequences processed in parallel.
+* block_size: Maximum context length for predictions.
+* max_iters: Maximum number of training iterations.
+* eval_interval: Interval for evaluating the loss on training and validation sets.
+* learning_rate: Learning rate for the optimizer.
+* device: Device to run the computations on (CPU or CUDA).
+* eval_iters: Number of iterations for estimating the loss during evaluation.
+* n_embd: Embedding dimension.
+* n_head: Number of heads for self-attention.
+* n_layer: Number of transformer blocks.
+* dropout: Dropout rate for regularization.
+* ngram: Size of the N-gram context for generating new tokens.
+* block_num_heads: Number of heads used in the hierarchical attention mechanism for attending to blocks of tokens.
+* block_head_size: Size of each head in the block-level attention.
+* token_num_heads: Number of heads used in the hierarchical attention mechanism for attending to individual tokens within blocks.
+* token_head_size: Size of each head in the token-level attention.
 
 Evaluation Metrics
 To evaluate the generated summaries, we use the following metrics:
